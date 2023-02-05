@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang='en'
-      className={`${newsreader.variable} ${cabinetGrotesk.variable} ${satoshi.variable}`}>
+      className={`${newsreader.variable} ${cabinetGrotesk.variable} ${satoshi.variable} bg-dark`}>
       <head />
       <body>{children}</body>
     </html>

@@ -18,6 +18,18 @@ module.exports = {
       steel: '#3D4656',
       dark: '#080808',
     },
+    animation: {
+      'text-grow': 'grow 2s ease-out forwards',
+    },
+    keyframes: {
+      grow: {
+        '0%': { fontWeight: '700' },
+        '100%': { fontWeight: '200' },
+      },
+    },
+    container: {
+      center: true,
+    },
     extend: {
       fontFamily: {
         grotesk: [

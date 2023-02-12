@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[cmdk-dialog] {
+  @apply absolute top-[18vh] z-10 flex w-full justify-center;
+}
+
+[cmdk-group-heading] {
+  @apply pb-1 text-xs uppercase opacity-60;
+}
+
+[cmdk-empty] {
+  @apply opacity-60;
+}
+
+[cmdk-item] {
+  @apply relative -mx-2 rounded-lg py-2 px-2 text-lg text-pale transition-colors;
+}
+
+[cmdk-item][aria-selected='true'] {
+  @apply bg-white/5;
+}
+
+[cmdk-item][aria-selected='true']:after {
+  @apply absolute right-2 -translate-y-px rounded-md border border-steel/25 bg-gradient-to-tr from-steel/30 via-steel/60 to-steel/30 px-2 py-1 text-sm content-['⏎'];
+}

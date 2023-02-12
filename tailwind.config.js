@@ -19,12 +19,21 @@ module.exports = {
       dark: '#080808',
     },
     animation: {
-      'text-grow': 'grow 2s ease-out forwards',
+      'pop-out': 'popout 200ms ease-out forwards',
     },
     keyframes: {
-      grow: {
-        '0%': { fontWeight: '700' },
-        '100%': { fontWeight: '200' },
+      popout: {
+        '0%': {
+          opacity: 0,
+          transform: 'scale(0.9) translateY(10px)',
+        },
+        '75%': {
+          transform: 'scale(1.007)',
+        },
+        '100%': {
+          opacity: 1,
+          transform: 'scale(1)',
+        },
       },
     },
     container: {

@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Image
           src="/grain.png"
           alt=""
-          className="pointer-events-none !fixed z-20 !h-auto select-none mix-blend-overlay"
+          className="pointer-events-none !fixed z-10 !h-auto select-none mix-blend-overlay"
           fill
           priority
         />

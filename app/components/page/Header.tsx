@@ -9,7 +9,7 @@ export default function Header() {
   // Toggle the menu when ⌘K is pressed
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (e.key === 'k' && e.metaKey) {
+      if (e.key === 'Escape' || (e.key === 'k' && e.metaKey)) {
         setOpen((open) => !open)
       }
     }

@@ -1,15 +1,14 @@
+import Header from './components/page/Header'
 import ProjectLink from './components/ProjectLink'
 import Sprite from './components/Sprite'
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Sprite />
 
       <div className="container relative cursor-default">
-        <button>Navigation</button>
-
-        <h1 className="mb-2 text-[6.75rem] font-bold leading-tight text-white transition-all duration-[1.4s] ease-in-out hover:font-semibold">
+        <h1 className="mb-2 mt-56 inline-block text-8xl font-bold leading-tight text-white drop-shadow-xl transition-all duration-[1.4s] ease-in-out hover:font-semibold">
           Jakub Šlambor
         </h1>
 
@@ -23,6 +22,6 @@ export default function Home() {
           </ProjectLink>
         </p>
       </div>
-    </main>
+    </>
   )
 }

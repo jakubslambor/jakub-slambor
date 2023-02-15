@@ -15,7 +15,7 @@
 }
 
 [cmdk-item] {
-  @apply relative -mx-2 rounded-lg py-2 px-2 text-lg text-pale transition-colors;
+  @apply relative -mx-2 cursor-pointer rounded-lg py-2 px-2 text-lg capitalize text-pale transition-colors;
 }
 
 [cmdk-item][aria-selected='true'] {

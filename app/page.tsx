@@ -1,4 +1,3 @@
-import Header from './components/page/Header'
 import ProjectLink from './components/ProjectLink'
 import Sprite from './components/Sprite'
 
@@ -8,11 +7,11 @@ export default function Home() {
       <Sprite />
 
       <div className="container relative cursor-default">
-        <h1 className="mb-2 mt-56 inline-block text-8xl font-bold leading-tight text-white drop-shadow-xl transition-all duration-[1.4s] ease-in-out hover:font-semibold">
+        <h1 className="mb-6 mt-56 inline-block text-6xl font-bold leading-[1.15] text-white drop-shadow-xl transition-[font-weight] duration-[1.4s] hover:font-semibold md:mb-2 md:text-8xl md:leading-tight">
           Jakub Šlambor
         </h1>
 
-        <p className="max-w-lg font-grotesk text-2xl font-bold text-pale">
+        <p className="max-w-lg font-grotesk text-xl font-bold leading-snug text-pale md:text-2xl">
           Crafting interfaces{' '}
           <ProjectLink href="https://goout.net">goout</ProjectLink> and{' '}
           <ProjectLink href="https://herohero.co">herohero</ProjectLink>,

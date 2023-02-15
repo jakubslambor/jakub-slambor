@@ -16,10 +16,14 @@ module.exports = {
       pale: '#F1F1F1',
       gray: '#32353A',
       steel: '#3D4656',
+      deep: '#09121C',
       dark: '#080808',
     },
     animation: {
       'pop-out': 'popout 200ms ease-out forwards',
+      'rotate-sec': 'rotate 60s linear infinite',
+      'rotate-min': 'rotate 3600s linear infinite',
+      'rotate-hr': 'rotate 86400s linear infinite',
     },
     keyframes: {
       popout: {
@@ -35,9 +39,24 @@ module.exports = {
           transform: 'scale(1)',
         },
       },
+      rotate: {
+        '0%': {
+          rotate: '0deg',
+        },
+        '100%': {
+          rotate: '360deg',
+        },
+      },
     },
     container: {
       center: true,
+      padding: {
+        DEFAULT: '1.5rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     },
     extend: {
       fontFamily: {
@@ -50,5 +69,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
 }

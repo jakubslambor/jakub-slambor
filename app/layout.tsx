@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${newsreader.variable} ${cabinetGrotesk.variable} ${satoshi.variable}`}
     >
       <head />
-      <body className="relative min-h-screen bg-dark bg-gradient-to-t from-dark to-[#09121c] font-satoshi">
+      <body className="relative min-h-screen bg-dark bg-gradient-to-t from-dark to-deep font-satoshi">
         <Image
           src="/grid.svg"
           alt=""
@@ -46,14 +46,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Image
           src="/grain.png"
           alt=""
-          className="pointer-events-none !fixed z-10 !h-auto select-none mix-blend-overlay"
+          className="pointer-events-none !fixed z-10 select-none mix-blend-overlay"
           fill
           priority
         />
         <Image
           src="/grain.png"
           alt=""
-          className="pointer-events-none !fixed z-20 !h-auto select-none mix-blend-overlay"
+          className="pointer-events-none !fixed z-20 select-none mix-blend-overlay"
           fill
           priority
         />

@@ -1,14 +1,27 @@
+'use client'
+
+import { usePathname } from 'next/navigation'
+import FooterCopy from './FooterCopy'
 import FooterLink from './FooterLink'
 
 export default function Footer() {
+  const isHome = usePathname() === '/'
+
   return (
-    <footer className="container fixed left-1/2 bottom-0 -translate-x-1/2 cursor-default font-grotesk font-semibold uppercase text-pale">
-      <p className="mb-4">Let&apos;s connect</p>
+    <footer
+      className={`container cursor-default font-grotesk font-semibold uppercase text-pale ${
+        isHome ? 'fixed left-1/2 bottom-0 -translate-x-1/2' : ''
+      }`}
+    >
+      <div className="flex justify-between">
+        <p className="mb-4">Let&apos;s connect</p>
+        <FooterCopy className="flex md:hidden" />
+      </div>
 
       <hr className="border border-white/70" />
 
       <div className="flex justify-between py-6 backdrop-blur-2xl">
-        <nav className="flex gap-x-10 text-sm">
+        <nav className="mf:justify-start flex w-full justify-between text-sm md:w-auto md:gap-x-10">
           <FooterLink href="mailto:jakub.slambor@gmail.com">Email</FooterLink>
           <FooterLink href="https://github.com/mjamesCZ">GitHub</FooterLink>
           <FooterLink href="https://twitter.com/slambor_jakub">
@@ -19,12 +32,7 @@ export default function Footer() {
           </FooterLink>
         </nav>
 
-        <p>
-          PRG{' '}
-          <span className="font-serif font-normal">
-            {new Date().getFullYear()}
-          </span>
-        </p>
+        <FooterCopy className="hidden md:flex" />
       </div>
     </footer>
   )

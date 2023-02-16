@@ -32,7 +32,7 @@ export default function Experience({ data }: { data: ExperienceType }) {
         href={data.url}
         target="_blank"
         rel="noreferrer"
-        className="flex-1 flex-grow-[1.2] underline decoration-white/70 underline-offset-4 transition-colors hover:decoration-white/90"
+        className="flex-1 flex-grow-[1.15] underline decoration-white/70 underline-offset-4 transition-colors hover:decoration-white/90"
       >
         <h3 className="text-base font-bold uppercase">{data.company}</h3>
       </Link>

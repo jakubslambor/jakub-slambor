@@ -31,7 +31,7 @@ export default function Header() {
       >
         <div className="container">
           <div
-            className={`flex items-start justify-between pt-8 pb-7 ${
+            className={`flex items-start justify-between pt-8 pb-6 ${
               !isHome ? 'border-b-2 border-white/70' : ''
             }`}
           >

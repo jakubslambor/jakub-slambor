@@ -7,23 +7,15 @@ export type Experience = {
   endDate?: Date
 }
 
-// add experience to the array in chronological order
+// add new experience to the top of the array to keep the desired order
 
 export const experience: Experience[] = [
   {
-    company: 'FRAME by FRAME',
-    url: 'https://framebyframe.cz/',
-    role: 'Filmmaker',
-    location: 'Mladá Boleslav, CZ',
-    startDate: new Date('2020-01-01'),
-    endDate: new Date('2020-12-31'),
-  },
-  {
-    company: 'GoOut',
-    url: 'https://goout.net/',
-    role: 'Frontend Developer',
-    location: 'Prague, CZ',
-    startDate: new Date('2021-09-13'),
+    company: 'forma studios',
+    url: 'https://formastudios.dev/',
+    role: 'Founder',
+    location: 'Worldwide',
+    startDate: new Date('2023-03-01'),
   },
   {
     company: 'Herohero',
@@ -33,10 +25,18 @@ export const experience: Experience[] = [
     startDate: new Date('2023-03-01'),
   },
   {
-    company: 'forma studios',
-    url: 'https://formastudios.dev/',
-    role: 'Founder',
-    location: 'Worldwide',
-    startDate: new Date('2023-03-01'),
+    company: 'GoOut',
+    url: 'https://goout.net/',
+    role: 'Frontend Developer',
+    location: 'Prague, CZ',
+    startDate: new Date('2021-09-13'),
+  },
+  {
+    company: 'FRAME by FRAME',
+    url: 'https://framebyframe.cz/',
+    role: 'Filmmaker',
+    location: 'Mladá Boleslav, CZ',
+    startDate: new Date('2020-01-01'),
+    endDate: new Date('2020-12-31'),
   },
 ]

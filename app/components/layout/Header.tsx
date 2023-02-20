@@ -11,8 +11,12 @@ export default function Header() {
   // Toggle the menu when ⌘K is pressed
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' || (e.key === 'k' && e.metaKey)) {
+      if (e.key === 'k' && e.metaKey) {
         setOpen((open) => !open)
+      }
+
+      if (e.key === 'Escape') {
+        setOpen(false)
       }
     }
 
@@ -38,7 +42,7 @@ export default function Header() {
             <div>
               {!isHome && (
                 <Link href="/">
-                  <h1 className="text-4xl font-bold text-white">
+                  <h1 className="text-2xl font-bold text-white md:text-4xl">
                     Jakub Šlambor
                   </h1>
                 </Link>

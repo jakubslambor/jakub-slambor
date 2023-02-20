@@ -27,20 +27,27 @@ export default function Experience({ data }: { data: ExperienceType }) {
   }
 
   return (
-    <div className="flex items-center border-b-[1.5px] border-white/30 py-5 text-sm text-pale">
+    <div className="items-center border-b-[1.5px] border-white/30 py-4 text-sm leading-relaxed text-pale md:flex md:py-5 md:leading-snug">
       <Link
         href={data.url}
         target="_blank"
         rel="noreferrer"
         className="flex-1 flex-grow-[1.15] underline decoration-white/70 underline-offset-4 transition-colors hover:decoration-white/90"
       >
-        <h3 className="text-base font-bold uppercase">{data.company}</h3>
+        <h3 className="mb-1 text-base font-bold uppercase md:mb-0">
+          {data.company}
+        </h3>
       </Link>
-      <p className="flex-1 flex-grow-[1.25]">{`${startDate} - ${endDate} · ${getDuration(
-        data.startDate,
-        data.endDate
-      )}`}</p>
+
       <p className="flex-1">{data.role}</p>
+
+      <p className="flex-1 flex-grow-[1.35]">
+        {`${startDate} - ${endDate} · `}
+        <span className="whitespace-nowrap">
+          {getDuration(data.startDate, data.endDate)}
+        </span>
+      </p>
+
       <p className="flex-1">{data.location}</p>
     </div>
   )

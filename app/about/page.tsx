@@ -1,18 +1,30 @@
 import { experience } from '@/data/experience'
+import { projects } from '@/data/projects'
 import Image from 'next/image'
-import Experience from '../components/Experience'
+import Experience from '../components/about/Experience'
+import Project from '../components/about/Project'
 
 export default function About() {
   return (
     <div className="container pt-32">
-      <section className="relative flex items-center gap-x-12">
-        <Image
-          src="/profile.jpg"
-          alt="Jakub Šlambor"
-          width={350}
-          height={350}
-          className="rounded-3xl grayscale before:absolute before:inset-0 before:z-50 before:block before:h-20 before:w-20 before:content-[url('/glow.svg')]"
-        />
+      <section className="relative items-center gap-12 md:flex lg:mx-12">
+        <div className="relative h-80 w-80 shrink-0">
+          <Image
+            src="glow.svg"
+            alt=""
+            fill
+            priority
+            className="absolute translate-y-5 scale-150"
+          />
+
+          <Image
+            src="/profile.jpg"
+            alt="Jakub Šlambor"
+            fill
+            priority
+            className="absolute inset-0 rounded-2xl shadow-lg"
+          />
+        </div>
 
         <div className="max-w-xl font-medium text-pale">
           <p className="pb-8">
@@ -38,9 +50,11 @@ export default function About() {
           <h2 className="flex-1 flex-grow-[1.15] font-grotesk text-2xl font-bold uppercase text-white">
             Experience
           </h2>
-          <p className="flex-1 flex-grow-[1.25]">years active</p>
-          <p className="flex-1">role</p>
-          <p className="flex-1">location</p>
+          <p className="hidden flex-1 md:block">role</p>
+          <p className="hidden flex-1 flex-grow-[1.35] md:block">
+            years active
+          </p>
+          <p className="hidden flex-1 md:block">location</p>
         </div>
 
         {experience.map((item, idx) => (
@@ -48,7 +62,17 @@ export default function About() {
         ))}
       </section>
 
-      <section className="mt-16"></section>
+      <section className="mt-16">
+        <h2 className="mb-6 border-b-[1.5px] border-white/70 pb-2 font-grotesk text-2xl font-bold uppercase text-white">
+          Projects
+        </h2>
+
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((item, idx) => (
+            <Project key={idx} data={item} />
+          ))}
+        </div>
+      </section>
     </div>
   )
 }

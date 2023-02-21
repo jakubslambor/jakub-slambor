@@ -1,49 +1,30 @@
 import { experience } from '@/data/experience'
 import { projects } from '@/data/projects'
 import Image from 'next/image'
-import Experience from '../components/about/Experience'
-import Project from '../components/about/Project'
+import HeroSection from '../components/HeroSection'
+import Experience from './Experience'
+import Project from './Project'
 
 export default function About() {
   return (
     <div className="container pt-32">
-      <section className="relative items-center gap-12 md:flex lg:mx-12">
-        <div className="relative h-80 w-80 shrink-0">
-          <Image
-            src="glow.svg"
-            alt=""
-            fill
-            priority
-            className="absolute translate-y-5 scale-150"
-          />
+      <HeroSection imageSrc="/profile.jpg" imageAlt="Jakub Šlambor">
+        <p>
+          Non mollit amet culpa proident nisi ut. Proident aliqua in excepteur
+          laborum amet incididunt duis ut sint. Occaecat voluptate aute do do
+          veniam mollit voluptate incididunt ut ullamco magna adipisicing
+          ullamco. Anim ipsum sit sint eiusmod culpa enim nostrud Lorem anim est
+          est quis proident.
+        </p>
 
-          <Image
-            src="/profile.jpg"
-            alt="Jakub Šlambor"
-            fill
-            priority
-            className="absolute inset-0 rounded-2xl shadow-lg"
-          />
-        </div>
-
-        <div className="max-w-xl font-medium text-pale">
-          <p className="pb-8">
-            Non mollit amet culpa proident nisi ut. Proident aliqua in excepteur
-            laborum amet incididunt duis ut sint. Occaecat voluptate aute do do
-            veniam mollit voluptate incididunt ut ullamco magna adipisicing
-            ullamco. Anim ipsum sit sint eiusmod culpa enim nostrud Lorem anim
-            est est quis proident.
-          </p>
-
-          <p>
-            Non mollit amet culpa proident nisi ut. Proident aliqua in excepteur
-            laborum amet incididunt duis ut sint. Occaecat voluptate aute do do
-            veniam mollit voluptate incididunt ut ullamco magna adipisicing
-            ullamco. Anim ipsum sit sint eiusmod culpa enim nostrud Lorem anim
-            est est quis proident.
-          </p>
-        </div>
-      </section>
+        <p>
+          Non mollit amet culpa proident nisi ut. Proident aliqua in excepteur
+          laborum amet incididunt duis ut sint. Occaecat voluptate aute do do
+          veniam mollit voluptate incididunt ut ullamco magna adipisicing
+          ullamco. Anim ipsum sit sint eiusmod culpa enim nostrud Lorem anim est
+          est quis proident.
+        </p>
+      </HeroSection>
 
       <section className="mt-16">
         <div className="flex items-baseline border-b-[1.5px] border-white/70 pb-2 font-serif text-white/70">

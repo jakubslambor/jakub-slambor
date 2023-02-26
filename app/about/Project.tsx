@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 export default function Project({ data }: { data: ProjectType }) {
   return (
-    <div className="group relative">
-      <div className="cursor-default rounded-2xl border border-steel/75 bg-dark/80 p-5 text-pale backdrop-blur-md">
+    <div className="card group relative h-60 rounded-2xl bg-steel/30 after:absolute after:inset-0 after:rounded-2xl after:opacity-0 after:transition-opacity after:content-['']">
+      <div className="absolute inset-px z-10 cursor-default rounded-2xl bg-dark/75 p-5 text-pale backdrop-blur-md">
         <div className="flex items-center gap-x-4">
           <div className="relative h-9 w-9">
             <Image src={data.favicon} alt={data.name} fill />

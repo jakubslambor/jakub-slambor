@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
-import { Newsreader } from '@next/font/google'
-import localFont from '@next/font/local'
+import { Newsreader } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import Image from 'next/image'
 import Header from '@/app/components/layout/Header'

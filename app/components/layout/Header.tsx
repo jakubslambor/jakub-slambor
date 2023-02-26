@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 z-10 w-full ${
+        className={`fixed top-0 z-20 w-full ${
           !isHome ? 'bg-deep/70 backdrop-blur-2xl' : ''
         }`}
       >
@@ -44,6 +44,9 @@ export default function Header() {
                 <Link href="/">
                   <h1 className="text-2xl font-bold text-white md:text-4xl">
                     Jakub Šlambor
+                    <span className="font-grotesk text-3xl opacity-70">
+                      <span className="px-1 opacity-50">/</span>Toolkit
+                    </span>
                   </h1>
                 </Link>
               )}

@@ -1,9 +1,7 @@
 import { experience } from '@/data/experience'
-import { projects } from '@/data/projects'
-import Image from 'next/image'
 import HeroSection from '../components/HeroSection'
 import Experience from './Experience'
-import Project from './Project'
+import Projects from './Projects'
 
 export default function About() {
   return (
@@ -48,11 +46,7 @@ export default function About() {
           Projects
         </h2>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((item, idx) => (
-            <Project key={idx} data={item} />
-          ))}
-        </div>
+        <Projects />
       </section>
     </div>
   )

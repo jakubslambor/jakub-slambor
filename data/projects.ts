@@ -31,4 +31,28 @@ export const projects: Project[] = [
       'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
     tags: ['Next.js', 'Stripe', 'Ecommerce'],
   },
+  {
+    name: 'jsem v obraze',
+    url: 'https://jsemvobraze.com/',
+    favicon: '/projects/jsemvobraze.png',
+    description:
+      'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
+    tags: ['Next.js', 'Stripe', 'Ecommerce'],
+  },
+  {
+    name: 'jsem v obraze',
+    url: 'https://jsemvobraze.com/',
+    favicon: '/projects/jsemvobraze.png',
+    description:
+      'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
+    tags: ['Next.js', 'Stripe', 'Ecommerce'],
+  },
+  {
+    name: 'jsem v obraze',
+    url: 'https://jsemvobraze.com/',
+    favicon: '/projects/jsemvobraze.png',
+    description:
+      'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
+    tags: ['Next.js', 'Stripe', 'Ecommerce'],
+  },
 ]

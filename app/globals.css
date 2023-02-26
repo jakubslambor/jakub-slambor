@@ -25,3 +25,15 @@
 [cmdk-item][aria-selected='true']:after {
   @apply absolute right-2 -translate-y-px rounded-md border border-steel/25 bg-gradient-to-tr from-steel/30 via-steel/60 to-steel/30 px-2 py-1 text-sm content-['⏎'];
 }
+
+.wrapper:hover > .card::after {
+  @apply opacity-100;
+}
+
+.card::after {
+  background: radial-gradient(
+    650px circle at var(--x) var(--y),
+    rgba(255, 255, 255, 0.16),
+    transparent 40%
+  );
+}

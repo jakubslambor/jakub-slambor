@@ -32,7 +32,7 @@ export default function Toolkit() {
         <Dock />
       </PageSection>
 
-      <PageSection name="Tools, gear and what I listen to">
+      <PageSection name="Tools, gear, and more">
         {toolkit.map((category) => (
           <>
             <h3 className="mb-2 mt-7 font-grotesk text-xl font-bold uppercase text-white">
@@ -44,10 +44,6 @@ export default function Toolkit() {
             ))}
           </>
         ))}
-
-        <h3 className="mb-2 mt-7 font-grotesk text-xl font-bold uppercase text-white">
-          Who I've been listening to lately
-        </h3>
       </PageSection>
     </div>
   )

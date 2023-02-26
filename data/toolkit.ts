@@ -52,7 +52,12 @@ export const toolkit: ToolkitCategory[] = [
         name: 'CleanShot X',
         url: 'https://cleanshot.com/',
         description:
-          'Never thought I would pay for a screenshot tool, but here we are',
+          'Never thought I’d pay for a screenshot tool, but here we are',
+      },
+      {
+        name: 'Sleeve',
+        url: 'https://sleeve.app/',
+        description: 'Overlay showing me the music that’s currently playing',
       },
       {
         name: 'Bitwarden',

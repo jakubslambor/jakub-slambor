@@ -29,7 +29,10 @@ export default function Project({ data }: { data: ProjectType }) {
         <p className="my-5">{data.description}</p>
 
         {data.tags.map((tag, idx) => (
-          <span className="mr-3 font-serif font-normal text-white/70" key={idx}>
+          <span
+            className="mr-3 font-serif font-normal italic text-white/70"
+            key={idx}
+          >
             #{tag}
           </span>
         ))}

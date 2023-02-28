@@ -4,9 +4,13 @@ import PageSection from '../components/PageSection'
 import Dock from './Dock'
 import ToolkitItem from './ToolkitItem'
 
+export const metadata = {
+  title: 'Toolkit',
+}
+
 export default function Toolkit() {
   return (
-    <div className="container pt-32">
+    <div className="container">
       <HeroSection imageSrc="/toolkit.jpg" imageAlt="Toolkit">
         <p>
           Non mollit amet culpa proident nisi ut. Proident aliqua in excepteur
@@ -26,13 +30,13 @@ export default function Toolkit() {
       </HeroSection>
 
       <PageSection
-        name="Dock"
+        title="Dock"
         subtitle="Some of my current favourite and/or most used apps"
       >
         <Dock />
       </PageSection>
 
-      <PageSection name="Tools, gear, and more">
+      <PageSection title="Tools, gear, and more">
         {toolkit.map((category) => (
           <>
             <h3 className="mb-2 mt-7 font-grotesk text-xl font-bold uppercase text-white">

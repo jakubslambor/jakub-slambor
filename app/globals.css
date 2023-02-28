@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  font-synthesis: none;
+}
+
 [cmdk-dialog] {
-  @apply absolute top-[18vh] z-10 flex w-full justify-center;
+  @apply fixed top-[18vh] z-40 flex w-full justify-center;
 }
 
 [cmdk-group-heading] {

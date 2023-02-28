@@ -7,8 +7,6 @@ export type Experience = {
   endDate?: Date
 }
 
-// add new experience to the top of the array to keep the desired order
-
 export const experience: Experience[] = [
   {
     company: 'forma studios',

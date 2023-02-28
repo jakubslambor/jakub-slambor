@@ -5,7 +5,7 @@ export default function FooterCopy({ className }: { className?: string }) {
     <div className={className ? className : ''}>
       <p className="mr-2">
         PRG{' '}
-        <span className="font-serif font-normal">
+        <span className="font-serif font-normal italic">
           {new Date().getFullYear()}
         </span>
       </p>

@@ -19,14 +19,14 @@ export default function CommandMenu({
 
   return (
     <div
-      className={`pointer-events-none fixed inset-0 z-10 bg-dark/80 backdrop-blur-sm transition-opacity duration-500 ${
+      className={`pointer-events-none fixed inset-0 z-30 bg-dark/80 backdrop-blur-sm transition-opacity duration-500 ${
         open ? 'opacity-100' : 'opacity-0'
       }`}
     >
       <Command.Dialog
         open={open}
         onOpenChange={setOpen}
-        className="absolute z-20 min-w-[87vw] animate-pop-out rounded-lg border border-steel/70 bg-gray/50 font-semibold text-white shadow backdrop-blur-xl ease-in-out md:min-w-[32rem]"
+        className="absolute min-w-[87vw] animate-pop-out rounded-lg border border-steel/70 bg-gray/50 font-semibold text-white shadow backdrop-blur-xl ease-in-out md:min-w-[32rem]"
       >
         <Command.Input
           className="w-full border-b border-steel/70 bg-transparent p-4 focus:outline-none"

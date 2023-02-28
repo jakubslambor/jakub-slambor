@@ -1,53 +1,89 @@
 import { experience } from '@/data/experience'
+import Link from 'next/link'
 import HeroSection from '../components/HeroSection'
+import PageSection from '../components/PageSection'
 import Experience from './Experience'
 import Projects from './Projects'
 
+export const metadata = {
+  title: 'About',
+}
+
 export default function About() {
   return (
-    <div className="container pt-32">
+    <div className="container">
       <HeroSection imageSrc="/profile.jpg" imageAlt="Jakub Šlambor">
         <p>
-          Non mollit amet culpa proident nisi ut. Proident aliqua in excepteur
-          laborum amet incididunt duis ut sint. Occaecat voluptate aute do do
-          veniam mollit voluptate incididunt ut ullamco magna adipisicing
-          ullamco. Anim ipsum sit sint eiusmod culpa enim nostrud Lorem anim est
-          est quis proident.
+          Hey! I’m Jakub. I’m a{' '}
+          <span className="font-serif text-lg italic opacity-[85%]">
+            frontend developer
+          </span>{' '}
+          with an eye for design based in Prague. Currently, I’m building sleek
+          and accessible interfaces at GoOut and Herohero.
         </p>
 
         <p>
-          Non mollit amet culpa proident nisi ut. Proident aliqua in excepteur
-          laborum amet incididunt duis ut sint. Occaecat voluptate aute do do
-          veniam mollit voluptate incididunt ut ullamco magna adipisicing
-          ullamco. Anim ipsum sit sint eiusmod culpa enim nostrud Lorem anim est
-          est quis proident.
+          I’m also an aspiring game developer. You can follow my progress of
+          making{' '}
+          <span className="font-serif text-lg italic opacity-[85%]">
+            Redacted
+          </span>{' '}
+          on{' '}
+          <Link
+            href="https://www.youtube.com/@formastudios"
+            className="opacity-[85%] transition-opacity hover:opacity-100"
+          >
+            YouTube
+          </Link>
+          , or support me on{' '}
+          <Link
+            href="https://www.youtube.com/@formastudios"
+            className="opacity-[85%] transition-opacity hover:opacity-100"
+          >
+            Herohero
+          </Link>
+          .
+        </p>
+
+        <p>
+          When I’m not working, I like running, drinking coffee, and listening
+          to{' '}
+          <Link
+            href="/toolkit"
+            className="opacity-[85%] transition-opacity hover:opacity-100"
+          >
+            great music
+          </Link>
+          .
         </p>
       </HeroSection>
 
-      <section className="mt-16">
-        <div className="flex items-baseline border-b-[1.5px] border-white/70 pb-2 font-serif text-white/70">
-          <h2 className="flex-1 flex-grow-[1.15] font-grotesk text-2xl font-bold uppercase text-white">
-            Experience
-          </h2>
-          <p className="hidden flex-1 md:block">role</p>
-          <p className="hidden flex-1 flex-grow-[1.35] md:block">
-            years active
-          </p>
-          <p className="hidden flex-1 md:block">location</p>
+      <PageSection
+        title="Experience"
+        columns={
+          <>
+            <p className="hidden flex-1 font-serif italic text-white/70 md:block">
+              role
+            </p>
+            <p className="hidden flex-1 flex-grow-[1.35] font-serif italic text-white/70 md:block">
+              years active
+            </p>
+            <p className="hidden flex-1 font-serif italic text-white/70 md:block">
+              location
+            </p>
+          </>
+        }
+      >
+        <div className="-mt-6">
+          {experience.map((item, idx) => (
+            <Experience data={item} key={idx} />
+          ))}
         </div>
+      </PageSection>
 
-        {experience.map((item, idx) => (
-          <Experience key={idx} data={item} />
-        ))}
-      </section>
-
-      <section className="mt-16">
-        <h2 className="mb-6 border-b-[1.5px] border-white/70 pb-2 font-grotesk text-2xl font-bold uppercase text-white">
-          Projects
-        </h2>
-
+      <PageSection title="Projects">
         <Projects />
-      </section>
+      </PageSection>
     </div>
   )
 }

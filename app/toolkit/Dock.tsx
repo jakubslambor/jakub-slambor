@@ -25,7 +25,7 @@ export default function Dock() {
               <span className="text-sm font-medium text-white">
                 {item.name}
               </span>
-              <div className="absolute -bottom-[5px] left-1/2 h-0 w-0 -translate-x-1/2 transform border-4 border-b-0 border-transparent border-t-dark" />
+              <div className="absolute -bottom-[5px] left-1/2 h-0 w-0 -translate-x-1/2 transform border-4 border-b-0 border-transparent border-t-steel/40" />
             </div>
           </Link>
         ))}

@@ -23,6 +23,63 @@ const newsreader = Newsreader({
   subsets: ['latin'],
 })
 
+export const metadata = {
+  // Basic
+  title: {
+    default: 'Jakub Šlambor',
+    template: '%s – Jakub Šlambor',
+  },
+  description:
+    'Crafting interfaces @goout and @herohero, building new worlds @formastudios',
+  creator: 'Jakub Šlambor',
+  manifest: 'https://nextjs.org/manifest.json',
+
+  // Icons
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/shortcut-icon.png',
+    apple: '/apple-icon.png',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/apple-touch-icon-precomposed.png',
+    },
+  },
+
+  // Open Graph
+  openGraph: {
+    title: 'Next.js',
+    description: 'The React Framework for the Web',
+    url: 'https://nextjs.org',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://nextjs.org/og.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://nextjs.org/og-alt.png',
+        width: 1800,
+        height: 1600,
+        alt: 'My custom alt',
+      },
+    ],
+    locale: 'en-US',
+    type: 'website',
+  },
+
+  // Twitter
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Next.js',
+    description: 'The React Framework for the Web',
+    siteId: '1467726470533754880',
+    creator: '@nextjs',
+    creatorId: '1467726470533754880',
+    images: ['https://nextjs.org/og.png'],
+  },
+}
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
@@ -30,7 +87,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${newsreader.variable} ${cabinetGrotesk.variable} ${satoshi.variable}`}
     >
       <head />
-      <body className="relative min-h-screen bg-dark bg-gradient-to-t from-dark to-deep font-satoshi">
+      <body className="relative min-h-screen bg-dark font-satoshi">
         <Image
           src="/grid.svg"
           alt=""

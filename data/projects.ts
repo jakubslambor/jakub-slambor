@@ -8,51 +8,43 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: 'jsem v obraze',
-    url: 'https://jsemvobraze.com/',
+    name: 'jsem v obraze chatbot',
+    url: 'https://telegram.org/',
     favicon: '/projects/jsemvobraze.png',
     description:
-      'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
-    tags: ['Next.js', 'Stripe', 'Ecommerce'],
+      'Breaking news telegram chatbot which aggregates, clusters and machine-translates news from multiple sources.',
+    tags: ['AI/ML', 'NLP', 'Python'],
   },
   {
     name: 'jsem v obraze',
     url: 'https://jsemvobraze.com/',
     favicon: '/projects/jsemvobraze.png',
     description:
-      'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
+      'Landing page and stripe-powered merch store for the popular instagram profile jsem v obraze.',
     tags: ['Next.js', 'Stripe', 'Ecommerce'],
   },
   {
-    name: 'jsem v obraze',
-    url: 'https://jsemvobraze.com/',
-    favicon: '/projects/jsemvobraze.png',
+    name: 'Advent of Code 2022',
+    url: 'https://github.com/mjamesCZ/advent-of-code',
+    favicon: '/projects/advent.png',
     description:
-      'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
-    tags: ['Next.js', 'Stripe', 'Ecommerce'],
+      'My solutions to the Advent of Code 2022. Written in TypeScript with Deno runtime.',
+    tags: ['Coding', 'Challenge', 'Algorithms'],
   },
   {
-    name: 'jsem v obraze',
-    url: 'https://jsemvobraze.com/',
-    favicon: '/projects/jsemvobraze.png',
+    name: 'AZUR grup Client portal',
+    url: 'https://azur-amber.vercel.app/',
+    favicon: '/projects/azur.png',
     description:
-      'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
-    tags: ['Next.js', 'Stripe', 'Ecommerce'],
+      'Client portal for AZUR grup, a real estate development company.',
+    tags: ['Next.js', 'SWR', 'Strapi'],
   },
   {
-    name: 'jsem v obraze',
-    url: 'https://jsemvobraze.com/',
-    favicon: '/projects/jsemvobraze.png',
+    name: 'marielli studio',
+    url: 'https://www.mariellistudio.cz/',
+    favicon: '/projects/marielli.png',
     description:
-      'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
-    tags: ['Next.js', 'Stripe', 'Ecommerce'],
-  },
-  {
-    name: 'jsem v obraze',
-    url: 'https://jsemvobraze.com/',
-    favicon: '/projects/jsemvobraze.png',
-    description:
-      'Enim ipsum deserunt mollit adipisicing sunt deserunt ex fugiat ut deserunt esse veniam ex nostrud.',
-    tags: ['Next.js', 'Stripe', 'Ecommerce'],
+      'Website for a local beauty studio. Built with Next.js and Strapi.',
+    tags: ['Next.js', 'Strapi', 'Tailwind'],
   },
 ]

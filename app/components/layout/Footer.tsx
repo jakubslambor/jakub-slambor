@@ -20,7 +20,7 @@ export default function Footer() {
 
       <hr className="border border-white/70" />
 
-      <div className="flex justify-between py-6 backdrop-blur-2xl">
+      <div className="flex justify-between py-6 md:backdrop-blur-2xl">
         <nav className="mf:justify-start flex w-full justify-between text-sm md:w-auto md:gap-x-10">
           <FooterLink href="mailto:jakub.slambor@gmail.com">Email</FooterLink>
           <FooterLink href="https://github.com/mjamesCZ">GitHub</FooterLink>

@@ -14,7 +14,7 @@ export default function HeroSection({
           alt=""
           fill
           priority
-          className="pointer-events-none absolute translate-y-5 scale-150 select-none"
+          className="pointer-events-none absolute max-w-[75vw] translate-y-5 scale-150 select-none"
         />
 
         <Image

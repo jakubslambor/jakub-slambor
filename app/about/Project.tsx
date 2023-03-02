@@ -44,7 +44,7 @@ export default function Project({ data }: { data: ProjectType }) {
         src="/glow2.svg"
         alt=""
         fill
-        className="-z-10 -translate-x-2 translate-y-3 scale-150 overflow-hidden opacity-0 duration-500 ease-in-out group-hover:opacity-100"
+        className="!fixed -z-10 -translate-x-2 translate-y-3 scale-150 overflow-hidden opacity-0 duration-500 ease-in-out group-hover:opacity-100 md:!absolute"
       />
     </div>
   )

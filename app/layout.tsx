@@ -79,7 +79,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Image
           src="/grid.svg"
           alt=""
-          className="!fixed -z-50 !h-auto select-none"
+          className="!fixed -z-50 select-none object-cover"
           fill
           priority
         />
@@ -91,14 +91,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Image
           src="/grain.png"
           alt=""
-          className="pointer-events-none !fixed z-10 select-none mix-blend-overlay"
+          className="pointer-events-none !fixed z-10 select-none object-cover mix-blend-overlay"
           fill
           priority
         />
         <Image
           src="/grain.png"
           alt=""
-          className="pointer-events-none !fixed z-20 select-none mix-blend-overlay"
+          className="pointer-events-none !fixed z-20 select-none object-cover mix-blend-overlay"
           fill
           priority
         />

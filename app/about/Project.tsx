@@ -20,7 +20,7 @@ export default function Project({ data }: { data: ProjectType }) {
             >
               {data.name}
             </Link>
-            <p className="mt-1 text-sm text-white/70">
+            <p className="mt-1 text-sm text-white/80">
               {new URL(data.url).host}
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function Project({ data }: { data: ProjectType }) {
         <div className="absolute bottom-4">
           {data.tags.map((tag, idx) => (
             <span
-              className=" mr-3 font-grotesk  font-semibold text-white/70"
+              className=" mr-3 font-grotesk font-medium text-white/80"
               key={idx}
             >
               #{tag}
@@ -44,7 +44,7 @@ export default function Project({ data }: { data: ProjectType }) {
         src="/glow2.svg"
         alt=""
         fill
-        className="-z-10 -translate-x-2 translate-y-3 scale-150 opacity-0 duration-500 ease-in-out group-hover:opacity-100"
+        className="-z-10 -translate-x-2 translate-y-3 scale-150 overflow-hidden opacity-0 duration-500 ease-in-out group-hover:opacity-100"
       />
     </div>
   )

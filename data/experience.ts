@@ -18,7 +18,7 @@ export const experience: Experience[] = [
   {
     company: 'Herohero',
     url: 'https://herohero.co/',
-    role: 'Frontend Lead',
+    role: 'Frontend Developer',
     location: 'Prague, CZ',
     startDate: new Date('2023-03-01'),
   },

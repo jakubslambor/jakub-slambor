@@ -1,5 +1,6 @@
 import { experience } from '@/data/experience'
 import Link from 'next/link'
+import HeroHighlight from '../components/HeroHighlight'
 import HeroSection from '../components/HeroSection'
 import PageSection from '../components/PageSection'
 import Experience from './Experience'
@@ -15,30 +16,24 @@ export default function About() {
       <HeroSection imageSrc="/profile.jpg" imageAlt="Jakub Šlambor">
         <p>
           Hey! I’m Jakub. I’m a{' '}
-          <span className="font-serif text-lg italic opacity-[85%]">
-            frontend developer
-          </span>{' '}
-          with an eye for design based in Prague. Currently, I’m building sleek
-          and accessible interfaces at GoOut and Herohero.
+          <HeroHighlight>frontend developer</HeroHighlight> with an eye for
+          design based in Prague. Currently, I’m building sleek and accessible
+          interfaces at GoOut and Herohero.
         </p>
 
         <p>
           I’m also an aspiring game developer. You can follow my progress of
-          making{' '}
-          <span className="font-serif text-lg italic opacity-[85%]">
-            Redacted
-          </span>{' '}
-          on{' '}
+          making <HeroHighlight>Redacted</HeroHighlight> on{' '}
           <Link
             href="https://www.youtube.com/@formastudios"
-            className="opacity-[85%] transition-opacity hover:opacity-100"
+            className="text-white opacity-80 transition-opacity hover:opacity-100"
           >
             YouTube
           </Link>
           , or support me on{' '}
           <Link
             href="https://www.youtube.com/@formastudios"
-            className="opacity-[85%] transition-opacity hover:opacity-100"
+            className="text-white opacity-80 transition-opacity hover:opacity-100"
           >
             Herohero
           </Link>
@@ -62,13 +57,13 @@ export default function About() {
         title="Experience"
         columns={
           <>
-            <p className="hidden flex-1 font-serif italic text-white/70 md:block">
+            <p className="hidden flex-1 font-serif italic text-white/80 md:block">
               role
             </p>
-            <p className="hidden flex-1 flex-grow-[1.35] font-serif italic text-white/70 md:block">
+            <p className="hidden flex-1 flex-grow-[1.35] font-serif italic text-white/80 md:block">
               years active
             </p>
-            <p className="hidden flex-1 font-serif italic text-white/70 md:block">
+            <p className="hidden flex-1 font-serif italic text-white/80 md:block">
               location
             </p>
           </>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function ToolkitItemComponent({ item }: { item: ToolkitItem }) {
   return (
-    <p className="leading-[1.75]">
+    <p className="mb-1 leading-relaxed">
       <Link
         href={item.url}
         target="_blank"

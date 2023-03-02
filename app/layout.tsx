@@ -24,7 +24,7 @@ const newsreader = Newsreader({
 })
 
 export const metadata = {
-  // Basic
+  // General
   title: {
     default: 'Jakub Šlambor',
     template: '%s – Jakub Šlambor',
@@ -32,38 +32,27 @@ export const metadata = {
   description:
     'Crafting interfaces @goout and @herohero, building new worlds @formastudios',
   creator: 'Jakub Šlambor',
-  manifest: 'https://nextjs.org/manifest.json',
+  manifest: '/fav/site.webmanifest',
+  themeColor: '#080808',
 
   // Icons
   icons: {
-    icon: '/icon.png',
-    shortcut: '/shortcut-icon.png',
-    apple: '/apple-icon.png',
-    other: {
-      rel: 'apple-touch-icon-precomposed',
-      url: '/apple-touch-icon-precomposed.png',
-    },
+    icon: ['/fav/favicon-16x16.png', '/fav/favicon-32x32.png'],
+    apple: '/fav/apple-touch-icon.png',
   },
 
   // Open Graph
   openGraph: {
-    title: 'Next.js',
-    description: 'The React Framework for the Web',
-    url: 'https://nextjs.org',
-    siteName: 'Next.js',
-    images: [
-      {
-        url: 'https://nextjs.org/og.png',
-        width: 800,
-        height: 600,
-      },
-      {
-        url: 'https://nextjs.org/og-alt.png',
-        width: 1800,
-        height: 1600,
-        alt: 'My custom alt',
-      },
-    ],
+    title: 'Jakub Šlambor',
+    description:
+      'Crafting interfaces @goout and @herohero, building new worlds @formastudios',
+    url: 'https://jakubslambor.com',
+    siteName: 'Jakub Šlambor',
+    images: {
+      url: '/og.png',
+      width: 1200,
+      height: 628,
+    },
     locale: 'en-US',
     type: 'website',
   },
@@ -71,12 +60,11 @@ export const metadata = {
   // Twitter
   twitter: {
     card: 'summary_large_image',
-    title: 'Next.js',
-    description: 'The React Framework for the Web',
-    siteId: '1467726470533754880',
-    creator: '@nextjs',
-    creatorId: '1467726470533754880',
-    images: ['https://nextjs.org/og.png'],
+    title: 'Jakub Šlambor',
+    description:
+      'Crafting interfaces @goout and @herohero, building new worlds @formastudios',
+    creator: '@slambor_jakub',
+    images: ['/og.png'],
   },
 }
 

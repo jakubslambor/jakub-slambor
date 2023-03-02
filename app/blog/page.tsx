@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'Blog',
+}
+
 export default function Blog() {
   return (
     <div className="container flex min-h-[73vh] items-center justify-center pt-32 font-serif text-lg italic text-white/50">

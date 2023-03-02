@@ -64,7 +64,7 @@ export const metadata = {
     description:
       'Crafting interfaces @goout and @herohero, building new worlds @formastudios',
     creator: '@slambor_jakub',
-    images: ['/og.png'],
+    images: '/og.png',
   },
 }
 

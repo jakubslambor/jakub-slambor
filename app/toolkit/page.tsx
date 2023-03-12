@@ -14,16 +14,15 @@ export default function Toolkit() {
     <div className="container">
       <HeroSection imageSrc="/toolkit.jpg" imageAlt="Toolkit">
         <p>
-          While tools we use don’t <HeroHighlight>really</HeroHighlight> matter
-          in the end, I still enjoy discovering and using keyboard friendly apps
-          and services. Design is a big part of my life, so I’m always on the
-          lookout for beautifully designed tools.
+          I enjoy discovering and using keyboard friendly apps and services.
+          Design is a big part of my life, so I’m always on the lookout for{' '}
+          <HeroHighlight>beautifully designed</HeroHighlight> tools.
         </p>
 
         <p>
-          So here is a collection of my favourite apps, services and gear. This
-          is a living, <HeroHighlight>breathing</HeroHighlight> document. I’ll
-          update it as I go.
+          Below you can find a collection of my favourite apps, services and
+          gear. This is a living, <HeroHighlight>breathing</HeroHighlight>{' '}
+          document. I’ll update it as I go.
         </p>
       </HeroSection>
 

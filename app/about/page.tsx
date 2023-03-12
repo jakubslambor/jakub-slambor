@@ -20,8 +20,8 @@ export default function About() {
           design based in Prague. Currently, I’m building sleek and accessible
           interfaces at GoOut and Herohero.
         </p>
-
-        <p>
+        {/* TODO: uncomment when I have a game to show */}
+        {/* <p>
           I’m also an aspiring game developer. You can follow my progress of
           making <HeroHighlight>Redacted</HeroHighlight> on{' '}
           <Link
@@ -38,8 +38,7 @@ export default function About() {
             Herohero
           </Link>
           .
-        </p>
-
+        </p> */}
         <p>
           When I’m not working, I like running, drinking coffee, and listening
           to{' '}

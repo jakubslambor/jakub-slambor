@@ -23,6 +23,9 @@ export default function HeroSection({
           fill
           priority
           className="absolute inset-0 rounded-2xl shadow-lg"
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
         />
       </div>
 

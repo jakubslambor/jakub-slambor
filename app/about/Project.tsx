@@ -25,9 +25,7 @@ export default function Project({ data }: { data: ProjectType }) {
     >
       <div className="absolute inset-px z-10 cursor-default rounded-2xl bg-dark/75 p-5 text-pale backdrop-blur-md">
         <div className="flex items-center gap-x-4">
-          <div className="relative h-9 w-9">
-            <Image src={data.favicon} alt={data.name} fill />
-          </div>
+          <Image src={data.favicon} alt={data.name} width={36} height={36} />
 
           <div>
             <Link

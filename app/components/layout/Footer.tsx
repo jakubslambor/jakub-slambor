@@ -10,7 +10,9 @@ export default function Footer() {
   return (
     <footer
       className={`container cursor-default font-grotesk font-semibold uppercase text-pale ${
-        isHome ? 'fixed left-1/2 bottom-0 -translate-x-1/2' : 'mt-20'
+        isHome
+          ? 'fixed left-1/2 bottom-0 -translate-x-1/2'
+          : 'bg-gradient pt-20'
       }`}
     >
       <div className="flex justify-between">

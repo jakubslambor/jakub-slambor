@@ -7,7 +7,7 @@ export default function HeroSection({
   children,
 }: PropsWithChildren<{ imageSrc: string; imageAlt: string }>) {
   return (
-    <section className="relative mx-auto mt-32 max-w-4xl items-center gap-12 md:flex">
+    <section className="relative mx-auto max-w-4xl items-center gap-12 pt-32 md:flex">
       <div className="relative mb-10 h-80 w-80 shrink-0 md:mb-0">
         <Image
           src="/glow.svg"

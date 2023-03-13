@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function Toolkit() {
   return (
-    <div className="container">
+    <div className="container bg-gradient">
       <HeroSection imageSrc="/toolkit.jpg" imageAlt="Toolkit">
         <p>
           I enjoy discovering and using keyboard friendly apps and services.

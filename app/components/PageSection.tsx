@@ -14,7 +14,7 @@ export default function PageSection({
 }>) {
   return (
     <section className={`mt-16 xl:mx-24 ${className ? className : ''}`}>
-      <div className="mb-6 flex items-baseline justify-between border-b-[1.5px] border-b-white/50 pb-2">
+      <div className="mb-6 flex flex-col items-baseline justify-between border-b-[1.5px] border-b-white/50 pb-2 sm:flex-row">
         <h2
           className={`font-grotesk text-2xl font-bold uppercase text-white ${
             columns ? 'flex-1 flex-grow-[1.15]' : ''

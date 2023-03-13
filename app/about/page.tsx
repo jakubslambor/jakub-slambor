@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="container">
+    <div className="container bg-gradient">
       <HeroSection imageSrc="/profile.jpg" imageAlt="Jakub Šlambor">
         <p>
           Hey! I’m Jakub. I’m a{' '}

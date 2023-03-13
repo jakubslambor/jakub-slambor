@@ -1,10 +1,28 @@
 import { Project as ProjectType } from '@/data/projects'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useEffect, useRef, useState } from 'react'
+import useIntersectionObserver from '../utils/intersection-observer'
 
 export default function Project({ data }: { data: ProjectType }) {
+  const ref = useRef<HTMLDivElement | null>(null)
+  const entry = useIntersectionObserver(ref, {
+    rootMargin: '-55% 0px -45% 0px',
+  })
+
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsMobile(window.innerWidth < 640)
+    }
+  }, [])
+
   return (
-    <div className="card group relative h-56 rounded-2xl bg-steel/30 after:absolute after:inset-0 after:rounded-2xl after:opacity-0 after:transition-opacity after:content-['']">
+    <div
+      ref={ref}
+      className="card group relative h-56 overflow-hidden rounded-2xl bg-steel/30 after:absolute after:inset-0 after:rounded-2xl after:opacity-0 after:transition-opacity after:content-['']"
+    >
       <div className="absolute inset-px z-10 cursor-default rounded-2xl bg-dark/75 p-5 text-pale backdrop-blur-md">
         <div className="flex items-center gap-x-4">
           <div className="relative h-9 w-9">
@@ -44,7 +62,9 @@ export default function Project({ data }: { data: ProjectType }) {
         src="/glow2.svg"
         alt=""
         fill
-        className="!fixed -z-10 -translate-x-2 translate-y-3 scale-150 overflow-hidden opacity-0 duration-500 ease-in-out group-hover:opacity-100 md:!absolute"
+        className={`absolute -translate-x-2 translate-y-3 scale-150 overflow-hidden opacity-0 duration-500 ease-in-out sm:group-hover:opacity-100 ${
+          isMobile && entry?.isIntersecting ? 'opacity-100' : ''
+        }`}
       />
     </div>
   )

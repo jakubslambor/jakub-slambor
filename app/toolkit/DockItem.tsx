@@ -3,7 +3,7 @@
 import { DockEntry } from '@/data/dock'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import useIntersectionObserver from '../utils/intersection-observer'
 import Tooltip from './Tooltip'
 
@@ -13,7 +13,8 @@ export default function DockItem({ item }: { item: DockEntry }) {
     rootMargin: '-50% 0px -50% 0px',
   })
 
-  const isMobile = window && window.innerWidth < 640
+  const [isMobile, setIsMobile] = useState(false)
+  setIsMobile(window.innerWidth < 640)
 
   return (
     <Link

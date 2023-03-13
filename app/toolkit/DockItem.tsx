@@ -13,7 +13,7 @@ export default function DockItem({ item }: { item: DockEntry }) {
     rootMargin: '-50% 0px -50% 0px',
   })
 
-  const isMobile = window.innerWidth < 640
+  const isMobile = window?.innerWidth < 640
 
   return (
     <Link

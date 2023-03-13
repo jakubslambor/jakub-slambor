@@ -14,7 +14,9 @@ export default function DockItem({ item }: { item: DockEntry }) {
   })
 
   const [isMobile, setIsMobile] = useState(false)
-  setIsMobile(window.innerWidth < 640)
+  if (typeof window !== 'undefined') {
+    setIsMobile(window.innerWidth < 768)
+  }
 
   return (
     <Link

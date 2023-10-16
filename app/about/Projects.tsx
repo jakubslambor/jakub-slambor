@@ -1,6 +1,6 @@
 'use client'
 
-import { projects } from '@/data/projects'
+import { projects } from '~/data/projects'
 import { MouseEvent } from 'react'
 import Project from './Project'
 

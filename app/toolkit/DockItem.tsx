@@ -1,6 +1,6 @@
 'use client'
 
-import { DockEntry } from '@/data/dock'
+import { DockEntry } from '~/data/dock'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'

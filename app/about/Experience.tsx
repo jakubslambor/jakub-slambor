@@ -1,4 +1,4 @@
-import { Experience as ExperienceType } from '@/data/experience'
+import { Experience as ExperienceType } from '~/data/experience'
 import Link from 'next/link'
 
 export default function Experience({ data }: { data: ExperienceType }) {

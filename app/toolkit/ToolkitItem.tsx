@@ -1,4 +1,4 @@
-import { ToolkitItem } from '@/data/toolkit'
+import { ToolkitItem } from '~/data/toolkit'
 import Link from 'next/link'
 
 export default function ToolkitItemComponent({ item }: { item: ToolkitItem }) {

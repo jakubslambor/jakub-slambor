@@ -1,4 +1,4 @@
-import { experience } from '@/data/experience'
+import { experience } from '~/data/experience'
 import Link from 'next/link'
 import HeroHighlight from '../components/HeroHighlight'
 import HeroSection from '../components/HeroSection'

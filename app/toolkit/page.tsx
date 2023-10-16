@@ -1,4 +1,4 @@
-import { toolkit } from '@/data/toolkit'
+import { toolkit } from '~/data/toolkit'
 import HeroHighlight from '../components/HeroHighlight'
 import HeroSection from '../components/HeroSection'
 import PageSection from '../components/PageSection'

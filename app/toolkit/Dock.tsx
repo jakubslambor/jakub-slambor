@@ -1,4 +1,4 @@
-import { dock } from '@/data/dock'
+import { dock } from '~/data/dock'
 import DockItem from './DockItem'
 
 export default function Dock() {

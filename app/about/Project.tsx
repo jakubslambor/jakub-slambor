@@ -1,4 +1,4 @@
-import { Project as ProjectType } from '@/data/projects'
+import { Project as ProjectType } from '~/data/projects'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'

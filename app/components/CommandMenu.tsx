@@ -1,4 +1,4 @@
-import { routes } from '@/data/routes'
+import { routes } from '~/data/routes'
 import { Command } from 'cmdk'
 import { usePathname, useRouter } from 'next/navigation'
 

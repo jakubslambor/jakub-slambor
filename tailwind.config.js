@@ -10,14 +10,12 @@ module.exports = {
   ],
   theme: {
     colors: {
+      white: colors.white,
+      silver: '#85888E',
+      gray: '#585B64',
+      dark: '#080808',
       transparent: 'transparent',
       current: 'currentColor',
-      white: colors.white,
-      pale: '#F1F1F1',
-      gray: '#32353A',
-      steel: '#3D4656',
-      deep: '#09121C',
-      dark: '#080808',
     },
     animation: {
       'pop-out': 'popout 200ms ease-out forwards',
@@ -53,7 +51,7 @@ module.exports = {
       padding: {
         DEFAULT: '1.5rem',
         sm: '2rem',
-        xl: '3rem',
+        xl: '1.5rem',
       },
     },
     extend: {

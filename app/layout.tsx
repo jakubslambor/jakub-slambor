@@ -1,26 +1,14 @@
 import { ReactNode } from 'react'
-import { Newsreader } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
 import Image from 'next/image'
 import Header from '~/app/components/layout/Header'
 import Footer from '~/app/components/layout/Footer'
 
-const cabinetGrotesk = localFont({
-  variable: '--font-cabinet-grotesk',
-  src: './fonts/CabinetGrotesk-Variable.woff2',
-})
-
-const satoshi = localFont({
-  variable: '--font-satoshi',
-  src: './fonts/Satoshi-Variable.woff2',
-})
-
-const newsreader = Newsreader({
-  variable: '--font-newsreader',
-  weight: ['400'],
-  style: ['italic'],
-  subsets: ['latin'],
+const oracle = localFont({
+  src: './fonts/ABC-Oracle-Variable.woff2',
+  display: 'swap',
+  variable: '--font-oracle',
 })
 
 export const metadata = {
@@ -70,16 +58,13 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${newsreader.variable} ${cabinetGrotesk.variable} ${satoshi.variable}`}
-    >
+    <html lang="en" className={oracle.variable}>
       <head />
       <body className="relative min-h-screen bg-dark font-satoshi">
         <Image
           src="/grid.svg"
           alt=""
-          className="!fixed -z-50 select-none object-cover"
+          className="!fixed -z-50 -rotate-6 select-none object-cover blur-[2px]"
           fill
           priority
         />

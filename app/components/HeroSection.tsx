@@ -29,7 +29,7 @@ export default function HeroSection({
         />
       </div>
 
-      <div className="flex flex-col gap-y-8 font-medium text-pale antialiased">
+      <div className="flex flex-col gap-y-8 font-medium  antialiased">
         {children}
       </div>
     </section>

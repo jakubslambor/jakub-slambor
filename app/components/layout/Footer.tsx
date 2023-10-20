@@ -9,9 +9,9 @@ export default function Footer() {
 
   return (
     <footer
-      className={`container cursor-default font-grotesk font-semibold uppercase text-pale ${
+      className={`container cursor-default font-grotesk font-semibold uppercase  ${
         isHome
-          ? 'fixed left-1/2 bottom-0 -translate-x-1/2'
+          ? 'fixed bottom-0 left-1/2 -translate-x-1/2'
           : 'bg-gradient pt-20'
       }`}
     >

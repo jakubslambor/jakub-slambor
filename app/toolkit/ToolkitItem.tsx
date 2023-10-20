@@ -8,7 +8,7 @@ export default function ToolkitItemComponent({ item }: { item: ToolkitItem }) {
         href={item.url}
         target="_blank"
         rel="noreferrer"
-        className="mr-1 text-pale underline decoration-white/70 underline-offset-4 transition-colors hover:decoration-white/90"
+        className="mr-1  underline decoration-white/70 underline-offset-4 transition-colors hover:decoration-white/90"
       >
         {item.name}
       </Link>

@@ -27,7 +27,7 @@ export default function Experience({ data }: { data: ExperienceType }) {
   }
 
   return (
-    <div className="items-center border-b-[1.5px] border-steel/90 py-4 text-sm leading-relaxed text-pale md:flex md:py-5 md:leading-snug">
+    <div className="items-center border-b-[1.5px] border-steel/90 py-4 text-sm leading-relaxed  md:flex md:py-5 md:leading-snug">
       <Link
         href={data.url}
         target="_blank"

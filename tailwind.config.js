@@ -17,6 +17,9 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
     },
+    fontFamily: {
+      sans: ['var(--font-oracle)', ...defaultTheme.fontFamily.sans],
+    },
     animation: {
       'pop-out': 'popout 200ms ease-out forwards',
       'rotate-sec': 'rotate 60s linear infinite',
@@ -48,21 +51,9 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: {
-        DEFAULT: '1.5rem',
-        sm: '2rem',
-        xl: '1.5rem',
-      },
+      padding: '2rem',
     },
     extend: {
-      fontFamily: {
-        grotesk: [
-          'var(--font-cabinet-grotesk)',
-          ...defaultTheme.fontFamily.sans,
-        ],
-        satoshi: ['var(--font-satoshi)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--font-newsreader)', ...defaultTheme.fontFamily.serif],
-      },
       backgroundImage: {
         gradient:
           'linear-gradient(90deg, transparent 0%, rgb(8 8 8 / 60%) 50%, transparent 100%)',

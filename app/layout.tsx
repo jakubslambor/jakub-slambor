@@ -60,11 +60,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={oracle.variable}>
       <head />
-      <body className="relative min-h-screen bg-dark font-satoshi">
+      <body className="relative min-h-screen bg-dark text-white">
         <Image
           src="/grid.svg"
           alt=""
-          className="!fixed -z-50 -rotate-6 select-none object-cover blur-[2px]"
+          className="!fixed -z-50 -rotate-6 select-none object-cover blur-[1px]"
           fill
           priority
         />

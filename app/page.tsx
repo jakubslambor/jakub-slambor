@@ -12,7 +12,7 @@ export default function Home() {
             Jakub Šlambor
           </h1>
 
-          <p className="max-w-lg font-grotesk text-xl font-bold leading-snug text-pale md:text-2xl">
+          <p className="max-w-lg font-grotesk text-xl font-bold leading-snug md:text-2xl">
             Crafting interfaces{' '}
             <ProjectLink href="https://goout.net">goout</ProjectLink> and{' '}
             <ProjectLink href="https://herohero.co">herohero</ProjectLink>,

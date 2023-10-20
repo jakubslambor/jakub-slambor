@@ -23,7 +23,7 @@ export default function Project({ data }: { data: ProjectType }) {
       ref={ref}
       className="card group relative h-56 overflow-hidden rounded-2xl bg-steel/30 after:absolute after:inset-0 after:rounded-2xl after:opacity-0 after:transition-opacity after:content-['']"
     >
-      <div className="absolute inset-px z-10 cursor-default rounded-2xl bg-dark/75 p-5 text-pale backdrop-blur-md">
+      <div className="absolute inset-px z-10 cursor-default rounded-2xl bg-dark/75 p-5  backdrop-blur-md">
         <div className="flex items-center gap-x-4">
           <Image src={data.favicon} alt={data.name} width={36} height={36} />
 

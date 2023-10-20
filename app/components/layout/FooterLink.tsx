@@ -10,7 +10,7 @@ export default function FooterLink({
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="transition-colors hover:text-pale/90"
+      className="hover:/90 transition-colors"
     >
       {children}
     </Link>
